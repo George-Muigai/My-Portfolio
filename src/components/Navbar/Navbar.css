@@ -1,0 +1,32 @@
+.navbar {
+    /* background: red; */
+    padding: 20px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    font-size: 17px;
+}
+
+.navbar ul li a{
+    color: #fff;
+}
+
+.connect {
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+    cursor: pointer;
+    font-size: 15px;
+    transition: 200ms ease;
+}
+
+.connect:hover {
+    transform: scale(1.05);
+}
