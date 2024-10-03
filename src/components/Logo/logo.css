@@ -1,5 +1,6 @@
 
 .logo {
+    cursor: pointer;
     position: relative;
     width: fit-content;
 }

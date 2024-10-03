@@ -1,0 +1,111 @@
+.projects {
+    padding: 100px 150px;
+}
+
+.project {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+/* reversed */
+.project.reversed {
+    flex-direction: row-reverse;
+}
+
+.project .img {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: 570px;
+    height: 360px;
+    transition: 200ms;
+    outline: 2px solid transparent;
+}
+
+/* reversed .img */
+.project.reversed .project-left .img {
+    top: 0;
+    right: 0;
+}
+
+.project-left .img:hover, .project.reversed .project-left .img:hover {
+    top: -10px;
+    transition: 200ms;
+}
+
+.project-left img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-left img:hover {
+    top: -10px;
+}
+
+.project-right {
+    z-index: 10;
+    flex-basis: 60%;
+    text-align: right;
+    padding: 35px 0;
+}
+
+/* reversed project right */
+.project.reversed .project-right {
+    text-align: left;
+}
+.project-right p:first-child{
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #b415ff;
+}
+
+.project-right .p-title{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.project-right .p-title:hover  {
+    color: #b415ff;
+}
+
+.desc {
+    color: #d6d5d5;
+    padding: 25px;
+    margin: 20px 0;
+    background: #2e2b27;
+    border-radius: 10px;
+}
+
+.project-tech {
+    color: #d6d5d5;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+/* reversed project-tech */
+.project.reversed .project-tech {
+    justify-content: start;
+}
+
+.project-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.project-links a {
+    font-size: 20px;
+}
+
+/* reversed project links */
+.project.reversed .project-links {
+    justify-content: start;
+}

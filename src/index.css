@@ -5,6 +5,14 @@
   list-style: none;
 }
 
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #b415ff;
+  border-radius: 5px;
+}
+
 body {
   font-family: 'outfit';
   height: 100vh;
