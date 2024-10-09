@@ -1,0 +1,36 @@
+
+.contact {
+    margin-bottom: 70px;
+}
+
+.contact-title {
+    margin-bottom: 20px;
+}
+
+.contact .p {
+    color: #d6d5d5;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.p p {
+    max-width: 500px;
+}
+
+.contact-btn {
+    display: flex;
+    justify-content: center;
+}
+.contact a {
+    text-align: center;
+    padding: 10px 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+.contact a:hover {
+    border: 2px solid #b415ff;
+}

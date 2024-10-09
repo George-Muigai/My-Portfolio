@@ -4,7 +4,7 @@
     padding: 0 150px;
 }
 
-.about-title, .project-title {
+.about-title, .project-title, .contact-title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,13 +12,13 @@
     margin-bottom: 72px;
 }
 
-.about-title h2, .project-title h2 {
+.about-title h2, .project-title h2, .contact-title h2 {
     position: relative;
     font-size: 54px;
     font-weight: 600;
 }
 
-.about-title img, .project-title img {
+.about-title img, .project-title img, .contact-title img {
     width: 120px;
     position: absolute;
     right: -10px;
