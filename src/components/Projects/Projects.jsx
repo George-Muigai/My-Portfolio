@@ -1,6 +1,7 @@
 import { FaGithub, FaLink } from 'react-icons/fa'
 import { Images } from '../../assets/Assets'
 import './projects.css'
+import OtherProjects from './OtherProjects'
 
 const Projects = () => {
   return (
@@ -8,6 +9,7 @@ const Projects = () => {
         <div className="project-title">
             <h2>My Projects <img src={ Images.pattern } alt="pattern" /></h2>
         </div>
+
         <div className="project-section">
             {/* Project One */}
             <div className="project">
@@ -85,7 +87,7 @@ const Projects = () => {
             </div>
 
             {/* Project Four */}
-            <div className="project reversed">
+            {/* <div className="project reversed">
                 <div className="project-left">
                     <div className="img">
                         <img src={ Images.project_4 } alt="project 1" />
@@ -106,9 +108,11 @@ const Projects = () => {
                         <a href="https://github.com/George-Muigai"><FaLink color='#d6d5d5' /></a>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
         </div>
+
+        <OtherProjects />
     </div>
   )
 }

@@ -47,6 +47,7 @@
 }
 
 .project-right {
+    pointer-events: none;
     z-index: 10;
     flex-basis: 60%;
     text-align: right;
@@ -65,6 +66,7 @@
 }
 
 .project-right .p-title{
+    pointer-events: all;
     color: #fff;
     font-size: 28px;
     font-weight: 400;
@@ -75,6 +77,7 @@
 }
 
 .desc {
+    pointer-events: all;
     color: #d6d5d5;
     padding: 25px;
     margin: 20px 0;
@@ -82,7 +85,7 @@
     border-radius: 10px;
 }
 
-.project-tech {
+.project-tech, .p2-tech {
     color: #d6d5d5;
     display: flex;
     justify-content: end;
@@ -90,7 +93,7 @@
 }
 
 /* reversed project-tech */
-.project.reversed .project-tech {
+.project.reversed .project-tech, .p2-tech {
     justify-content: start;
 }
 
@@ -108,4 +111,53 @@
 /* reversed project links */
 .project.reversed .project-links {
     justify-content: start;
+}
+
+/* Other Projects CSS */
+.other-p h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.grid-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.project-2 {
+    cursor: pointer;
+    background: #2e2b27;
+    padding: 35px 30px;
+    border-radius: 12px;
+    transition: transform 150ms ease;
+}
+
+.project-2:hover {
+    transform: translateY(-5px);
+}
+
+.project-2:hover .p2-title a, .project-2:hover .fa-icon {
+    color: #b415ff;
+}
+
+.p2-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.p2-title a {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.p2-desc {
+    color: #d6d5d5;
+    margin: 20px 0;
+}
+
+.p2-tech {
+    gap: 10px;
 }
