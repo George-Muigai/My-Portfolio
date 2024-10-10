@@ -3,6 +3,8 @@ import { Images } from '../../assets/Assets'
 import './projects.css'
 import OtherProjects from './OtherProjects'
 
+import { motion } from 'framer-motion'
+
 const Projects = () => {
   return (
     <div className='projects'>
@@ -12,7 +14,12 @@ const Projects = () => {
 
         <div className="project-section">
             {/* Project One */}
-            <div className="project">
+            <motion.div
+                initial={{transform: "translateX(-100%)"}}
+                whileInView={{transform: "translateX(0)"}}
+                transition={{duration: 0.5}}
+                viewport={{once: true}}
+            className="project">
                 <div className="project-left">
                     <div className="img">
                         <img src={ Images.project_1 } alt="project 1" />
@@ -33,10 +40,15 @@ const Projects = () => {
                         <a href="https://github.com/George-Muigai"><FaLink color='#d6d5d5' /></a>
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
             {/* Project Two */}
-            <div className="project reversed">
+            <motion.div
+                initial={{transform: "translateX(-100%)"}}
+                whileInView={{transform: "translateX(0)"}}
+                transition={{duration: 0.5}}
+                viewport={{once: true}}
+            className="project reversed">
                 <div className="project-left">
                     <div className="img">
                         <img src={ Images.project_2 } alt="project 1" />
@@ -59,10 +71,15 @@ const Projects = () => {
                         <a href="https://github.com/George-Muigai"><FaLink color='#d6d5d5' /></a>
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
             {/* Project Three */}
-            <div className="project">
+            <motion.div
+                initial={{transform: "translateX(-100%)"}}
+                whileInView={{transform: "translateX(0)"}}
+                transition={{duration: 0.5}}
+                viewport={{once: true}}
+            className="project">
                 <div className="project-left">
                     <div className="img">
                         <img src={ Images.project_3 } alt="project 1" />
@@ -84,7 +101,7 @@ const Projects = () => {
                         <a href="https://github.com/George-Muigai"><FaLink color='#d6d5d5' /></a>
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
             {/* Project Four */}
             {/* <div className="project reversed">

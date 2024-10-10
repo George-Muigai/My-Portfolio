@@ -2,9 +2,16 @@ import './about.css'
 import { Images } from '../../assets/Assets'
 import { FaArrowRight } from 'react-icons/fa'
 
+import { motion } from 'framer-motion'
+
 const About = () => {
   return (
-    <div className="about">
+    <motion.div
+        initial={{transform: "translateX(100%)"}}
+        whileInView={{transform: "translateX(0)"}}
+        transition={{duration: 0.6}}
+        viewport={{once: true}}
+    className="about">
         <div className="about-title">
             <h2>About Me <img src={ Images.pattern } alt="pattern" /></h2>
             {/* <img src={ Images.pattern } alt="pattern" /> */}
@@ -32,7 +39,7 @@ const About = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 
